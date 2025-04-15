@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.containerReserva{
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #0077cc;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: #0077cc;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 25px;
+  border: none;
+  text-align: center;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  width: 45%;
+}
+
+.btn:hover {
+  background-color: #005fa3;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+input, select {
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #0077cc;
+}
+
+button[type="submit"] {
+  padding: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+ul#listaReservas {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+ul#listaReservas li {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remover {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  margin-left: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-remover:hover {
+  background-color: #b30000;
+}
+
+.grid-estacionamento {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.vaga {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.vaga:hover {
+  background-color: #e0e0e0;
+}
+
+.bolinha {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: background-color 0.3s;
+}
+
+.bolinha:hover {
+  background-color: #0077cc;
+}
+
+.container .formulario input,
+.container .formulario select {
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+}
+
+.container .formulario input:focus,
+.container .formulario select:focus {
+  border-color: #0077cc;
+}
+
+.container .formulario button[type="submit"] {
+  background-color: #0077cc;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.container .formulario button[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+.grid-estacionamento {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  gap: 15px;
+  margin-top: 2rem;
+}
+
+.vaga {
+  width: 60px;
+  height: 60px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.vaga:hover {
+  background-color: #e0e0e0;
+}
+
+.bolinha {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: background-color 0.3s;
+}
+
+.bolinha.livre {
+  background-color: #f7f7f7; /* Cor das vagas livres */
+}
+
+.bolinha:hover {
+  background-color: #0077cc;
+}
+.listagemContainer{
+  display: flex;
+  gap: 3rem
+}
